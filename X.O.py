@@ -14,9 +14,6 @@ def choosePlayerLetter():
 def whoGoesFirst():
     return 'computer' if random.randint(0, 1) == 0 else 'player'
 
-def playAgain():
-    return tk.messagebox.askyesno('Играть снова', 'Хотите сыграть ещё раз?')
-
 def makeMove(board, letter, move):
     board[move] = letter
 
